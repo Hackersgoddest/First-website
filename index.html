@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hackersgoddest Home Page</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <!-- My self
-        my image -->
-        <div class="profile-card">
-            <img id="p-img1" class="profile-img" src="images/hack_1.jpg" alt="Profile picture"/>
-            <div>
-                <strong class="profile-name">Hackersgoddest</strong>
-                <p class="profile-role">Software Engineer</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackers Blog</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="brand">
+            <div class="brand-name">
+                <b class="brand-name-item">hackersgoddest</b>
             </div>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li class="main-nav-list-items main-nav-list-items-home">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="main-nav-list-items main-nav-list-items-service">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="main-nav-list-items main-nav-list-items-signUp">
+                        <a href="#">SignUp</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="login">
+            <form action="main.php" method="post" class="login-form">
+                <fieldset class="login-profile">
+                    <div class="login-container">
+                        <b class="login-header">Sign into your account</b><br><br>
+                        <input class="login-list" type="email" name="email" placeholder="Enter your e-mail"><br>
+                        <input class="login-list" type="password" name="password" placeholder="Enter your password"><br>
+                        <button class="login-submit" type="submit">Sign in</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
-    </body>
+    </div>
+</body>
 </html>
