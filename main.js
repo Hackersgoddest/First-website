@@ -1,1 +1,1 @@
-console.log('Hello World');
+// alert('Welcome to hackersgoddest platform');

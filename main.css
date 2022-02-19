@@ -69,10 +69,11 @@ body{
 }
 .login{
     display: flex;
-    justify-content: center;
-    height: 1000px;
+    justify-content: space-between;
+    height: 1100px;
     margin-top: 0;
     background: repeating-linear-gradient(90deg,black,transparent 1px);
+    flex-flow: column;
 }
 .login-form{
     width: 100%;
@@ -89,7 +90,8 @@ body{
     justify-content: center;
     height: 500px;
     background: repeating-linear-gradient(90deg,black,transparent 0px);
-    border-radius: 10px
+    border-radius: 10px;
+    margin-bottom: 140px;
 }
 .login-container{
     display: flex;
@@ -184,5 +186,56 @@ body{
 }
 .login-profile:hover .login-list:active{
     border: 0px solid snow;
+}
+.about{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: inherit;
+    flex-flow: column;
+    margin: auto 0px auto auto;
+    padding: 0px;
+    background: repeating-linear-gradient(90deg,black,transparent 1px);
+}
+.social-networks-header{
+    display: flex;
+    justify-content: start; 
+}
+.social-networks-header b{
+    font-size: xx-large;
+    text-align: center;
+    color: snow;
+    text-shadow: 1px 1px snow;
+    font-family: monospace;  
+}
+.social-network-items{
+    display: flex;
+    justify-content: start;
+    flex-flow: column;
+}
+.about-social-networks{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 2px 5px 5px;
+}
+.about-social-networks img{
+    width: 30px;
+    height: 30px;
+}
+.social-networks-handles{
+    color: whitesmoke;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 0px 0px 10px ;
+    padding-top: 7px;
+}
+.social-networks-handles a{
+    color: grey;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.social-networks-handles a:hover{
+    color: whitesmoke;
 }
 
