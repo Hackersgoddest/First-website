@@ -75,9 +75,55 @@ body{
     background: repeating-linear-gradient(90deg,black,transparent 1px);
     flex-flow: column;
 }
+.form-header{
+    display: flex;
+    color: antiquewhite;
+    /* background: linear-gradient(90deg, black, transparent 1px); */
+    margin: 150px auto 0 auto;
+    width: 60%;
+    justify-content: center;
+    flex-flow: column;
+}
+.form-header-item{
+    /* font-family: consolas; */
+    /* border-right: 3px solid black; */
+    /* animation: typist 15s steps(37) infinite, caret 0.7s infinite step-end; */
+    /* animation: caret 0.7s infinite step-end; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    font-size: xx-large;
+    font-family: consolas;
+    width: 54%;
+    margin: auto;
+    position: relative;
+    animation: blink 1s infinite step-start;
+}
+/* @keyframes caret{
+    0%, 100%{border-color: transparent;}
+    50%{border-color: black;}
+} */
+/* @keyframes typist{
+    0%{width: 0ch;}
+    30%{width: 37ch;}
+    80%{width: 37ch;}
+    90%{width: 0ch;}
+    100%{width: 0ch;}
+} */
+.form-header-item::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    width: 1px;
+    height: 4%;
+    border-right: 2px solid black;
+}
+@keyframes blink {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 .login-form{
     width: 100%;
-    height: 1000px;
+    height: 1010px;
     margin: auto;
     padding: 200px 0;
 }
@@ -189,7 +235,7 @@ body{
 }
 .about{
     width: 100%;
-    height: 220px;
+    height: 250px;
     display: flex;
     justify-content: inherit;
     flex-flow: column;
